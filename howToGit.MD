@@ -1,6 +1,5 @@
 # 1. 
-
-**`git config --global user.name "Tony-Pichai"`**
+#### *Configuring git*
 
 This changes the name associated with this git configuration
 
@@ -10,20 +9,39 @@ This changes the email.
 
 Leave out `--global` to do one time instances of naming.
 
-# 2.
 
-cd to where you want to go
 
-**`git status`** - Brings us what's going on
+
+# 2. 
+cd to where you want to make your repository
+
+**`git innit`** 
+
+
+
+
+# 3. Begin Staging
+
+**`git status`** - Tells you what's going on, is it a repository yet?
 
 **`git add filename.ext`** - Adds file to the `staging Environment`
 
-**git status** - Check if its ok?
+or
 
-# 3.
+**`git add .`**  - Short hand, adds files
+
+**`git status`** - Has it been staged? (green when yes)
+
+**`git log --oneline`** - Show's you what's committed and your branch
+
+
+
+
+### 3b.
+Other options for adding files
 
 **`git add -a`**
-*or* **`git add --all`** - sends it
+*or* **`git add --all`** - sends all the files
 
 At this point you might go into VIM
 
@@ -35,13 +53,49 @@ At this point you might go into VIM
    * `w` - stands for write
    * `q` - quit
    
-# 4.
 
-Once you're happy with your work, commit the file to git.
 
-`git commit -m "It's best practice to include a message"`
 
-If that doesn't work try this:
+# 4. Commit
+
+Happy with the work? commit the file to repository.
+
+`git commit -m "Include a message"`
+
+*Git Commit* takes a snapshot of your staging area, you also get a hash code assigned to this snapshot.
+
+`git status` - check if it worked
+
+`cmd+shit+.` To reveal hidden files - objects folder shows the history
+
+## 4 b.
+
+If this doesn't work you can skip the **staging environment** bit and automatically stage everything with `-a` (all)
 
 `git commit -a -m "first commit"`
 * `-m` stands for message
+
+
+[How to visualise this](https://www.youtube.com/watch?v=UYtUFKn1hXw)
+
+
+
+# 5. - New files?
+
+Updated the files on your computer?
+
+1. Add updated files the staging area first.
+2. git add .
+
+Want to scrap something  staged?
+
+1.` git reset HEAD --howToGit.MD`
+2. This will un-stage that particular file
+
+
+
+
+
+# 6. - Branching out
+
+To create a branch 
