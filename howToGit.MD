@@ -80,7 +80,7 @@ If this doesn't work you can skip the **staging environment** bit and automatica
 
 
 
-# 5. - New files?
+# 5. Adding files!
 
 Updated the files on your computer?
 
@@ -141,3 +141,20 @@ Method 1, push code to a github repo
 2. **`git status`** check git status is clear
 3. Push your files to which branch
 4. **`git push https://github.com/TonyPichai/howToGit.git master`**
+   * You'll find that url on github
+   * `push` pushes to git
+   * `master`
+
+# 13. PushChanges
+
+Pushing up changes to the new repo
+1. **`git add.`**
+2. **`git commit -m 'comment'`**
+3. **`git push 'URL'`**
+   * Instead of having to paste the *unique* URL every time make an ``alias``
+4. **`git remote add origin`**
+   * `origin` is the default alias name
+   * `remote` remote repositories
+  
+5. now you can just type `git push origin master`
+
